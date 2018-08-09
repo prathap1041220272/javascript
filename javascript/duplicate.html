@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		to find the duplicate values
+	</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+	
+	var names = ['hari','hari','sam','hello','hi','hi'];
+
+	function removes(arr) {
+	let original_values = []; 
+		for (var i = 0; i < arr.length; i++) {
+			if (original_values.lastIndexOf(arr[i])== -1) {
+				original_values.push(arr[i])
+			}
+		}
+		return original_values
+	}
+	document.getElementById('demo').innerHTML = removes(names);
+</script>
+</body>
+</html>
